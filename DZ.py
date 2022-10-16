@@ -1,4 +1,14 @@
-#задание 2
+# -*- coding: utf-8 -*-
+import random
+#рисует равнобедренный треугольник
+def triangle(a):
+    for i in range(a+1):
+       print(' '*(a-i), '*'*(i*2+1))
+
+triangle(int(input()))
+
+
+#функция из прошлого задания для создания гистограммы частоты вхождения некоторых интервалов
 def calcHist(tdata):
 #   hist is a List to store histogram. It contains [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     hist = [0]*10
@@ -25,21 +35,7 @@ def calcHist(tdata):
         
     return hist
 
-##задание 1
-#data = []
-#k = 0
-#for i in range(1000000):
-#    if k<1000:
-#        data.append(k)
-#        k+=1
-#    else: k = 0
-
-#a = calcHist(data)
-#print(a)
-
-import time
-import random
-
+#функция из прошлого задания для создания списка с рандомными значениями
 def initListWithRandomNumbers():
 
     rand_list=[]
@@ -50,17 +46,18 @@ def initListWithRandomNumbers():
 
     return rand_list
 
-a = initListWithRandomNumbers()
+#функция для записи гистограмм в файл
+#def in_file(hist): 
+#    with open('students.txt', 'w') as student_file:
+#        student_file.write(str(hist))
+#        return None 
+         
 
-# starting time
-l = []
-for i in range(100):
-    start = time.time()
-    calcHist(a)
-    # end time
-    end = time.time()
-    # total time taken
-    l.append(end - start)
-print('min time =', min(l))
-print('max time =', max(l))
-print('mean time =', sum(l)/len(l))
+#hist = calcHist(initListWithRandomNumbers())
+#in_file(hist)
+#функция для чтения гистограмм из файла
+def out_file(name_file): 
+    with open(name_file, 'r') as student_file:
+        f  = student_file.readlines()
+        print(f)
+out_file('students.txt')
