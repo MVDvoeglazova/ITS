@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import random
-#рисует равнобедренный треугольник
+#СЂРёСЃСѓРµС‚ СЂР°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 def triangle(a):
     for i in range(a+1):
        print(' '*(a-i), '*'*(i*2+1))
@@ -8,7 +8,7 @@ def triangle(a):
 triangle(int(input()))
 
 
-#функция из прошлого задания для создания гистограммы частоты вхождения некоторых интервалов
+#С„СѓРЅРєС†РёСЏ РёР· РїСЂРѕС€Р»РѕРіРѕ Р·Р°РґР°РЅРёСЏ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РіРёСЃС‚РѕРіСЂР°РјРјС‹ С‡Р°СЃС‚РѕС‚С‹ РІС…РѕР¶РґРµРЅРёСЏ РЅРµРєРѕС‚РѕСЂС‹С… РёРЅС‚РµСЂРІР°Р»РѕРІ
 def calcHist(tdata):
 #   hist is a List to store histogram. It contains [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     hist = [0]*10
@@ -35,7 +35,7 @@ def calcHist(tdata):
         
     return hist
 
-#функция из прошлого задания для создания списка с рандомными значениями
+#С„СѓРЅРєС†РёСЏ РёР· РїСЂРѕС€Р»РѕРіРѕ Р·Р°РґР°РЅРёСЏ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ СЃРїРёСЃРєР° СЃ СЂР°РЅРґРѕРјРЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё
 def initListWithRandomNumbers():
 
     rand_list=[]
@@ -46,7 +46,7 @@ def initListWithRandomNumbers():
 
     return rand_list
 
-#функция для записи гистограмм в файл
+#С„СѓРЅРєС†РёСЏ РґР»СЏ Р·Р°РїРёСЃРё РіРёСЃС‚РѕРіСЂР°РјРј РІ С„Р°Р№Р»
 #def in_file(hist): 
 #    with open('students.txt', 'w') as student_file:
 #        student_file.write(str(hist))
@@ -55,7 +55,7 @@ def initListWithRandomNumbers():
 
 #hist = calcHist(initListWithRandomNumbers())
 #in_file(hist)
-#функция для чтения гистограмм из файла
+#С„СѓРЅРєС†РёСЏ РґР»СЏ С‡С‚РµРЅРёСЏ РіРёСЃС‚РѕРіСЂР°РјРј РёР· С„Р°Р№Р»Р°
 def out_file(name_file): 
     with open(name_file, 'r') as student_file:
         f  = student_file.readlines()
