@@ -1,4 +1,4 @@
-#ηΰδΰνθε 2
+#ΠΡƒΠ½ΠΊΡ‚ 2
 def calcHist(tdata):
 #   hist is a List to store histogram. It contains [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     hist = [0]*10
@@ -25,7 +25,7 @@ def calcHist(tdata):
         
     return hist
 
-##ηΰδΰνθε 1
+##ΠΡƒΠ½ΠΊΡ‚ 1
 #data = []
 #k = 0
 #for i in range(1000000):
